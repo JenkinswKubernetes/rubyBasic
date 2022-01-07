@@ -1,0 +1,6 @@
+<h3>Hola soy el home</h3>
+
+<% @files.drop(2).each do |fileName|%>
+  <a href="/<%= File.basename(fileName, ".*")%>"><%= File.basename(fileName, ".*")%></a><br>
+<% end %>
+<a href="/new"><h5>Create new course</h5></a>

@@ -1,0 +1,10 @@
+<p>Vamos a modificar <%= @name%>.</p>
+<form action="/<%= @name %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <fieldset>
+    <textarea name="content" value="<%= @content %>" id="content" cols="30">
+      <%= @content %>
+    </textarea>
+  </fieldset>
+  <input type="submit" name="deleteCourse" value="update">
+</form>
